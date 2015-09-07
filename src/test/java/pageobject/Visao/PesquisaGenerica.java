@@ -1,10 +1,10 @@
-package br.eti.victorbathke.testes.pageobject.Visao;
+package test.java.pageobject.Visao;
 
 import org.openqa.selenium.By;
 
-import br.eti.victorbathke.testes.shared.FabricaWebDriver;
-import br.eti.victorbathke.testes.shared.JsonParseSingleQuote;
-import br.eti.victorbathke.testes.shared.TestBase;
+import test.java.shared.FabricaWebDriver;
+import test.java.shared.JsonParseSingleQuote;
+import test.java.shared.TestBase;
 
 public class PesquisaGenerica extends TestBase {
 

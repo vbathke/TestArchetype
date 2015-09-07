@@ -1,4 +1,4 @@
-package br.eti.victorbathke.testes.shared;
+package test.java.shared;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

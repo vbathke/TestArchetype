@@ -1,4 +1,4 @@
-package br.eti.victorbathke.testes.shared;
+package test.java.shared;
 
 import java.io.FileInputStream;
 import java.net.MalformedURLException;
