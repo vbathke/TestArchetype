@@ -14,7 +14,5 @@ public class FA2 extends TestBase {
 		PesquisaGenerica.procurar("{'busca':'Victor Augusto Bathke'}");
 		
 		SeleniumUtils.isTextPresent("Aproximadamente");
-		System.out.println("Texto \"Aproximadamente\" verificado");
-		
 	}
 }
