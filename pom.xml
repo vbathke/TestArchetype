@@ -78,8 +78,8 @@
 		        <configuration>
 					<parallel>both</parallel>
 	  				<forkMode>perthread</forkMode>
-	  				<forkCount>15</forkCount>
-	          		<threadCount>15</threadCount>
+	  				<forkCount>5</forkCount>
+	          		<threadCount>5</threadCount>
 	        		<reuseForks>true</reuseForks>
 	        		<useUnlimitedThreads>true</useUnlimitedThreads>
 			        <includes>
