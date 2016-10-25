@@ -41,6 +41,26 @@ public class FabricaWebDriver {
 			caps = DesiredCapabilities.firefox();
 			if (properties.getProperty("execucaonuvem").equals("true")) {
 				try {
+					if(properties.getProperty("browsernuvem").equals("edge"))
+						caps = DesiredCapabilities.android();
+					if(properties.getProperty("browsernuvem").equals("chrome"))
+						caps = DesiredCapabilities.chrome();
+					if(properties.getProperty("browsernuvem").equals("firefox"))
+						caps = DesiredCapabilities.firefox();
+					if(properties.getProperty("browsernuvem").equals("edge"))
+						caps = DesiredCapabilities.edge();
+					if(properties.getProperty("browsernuvem").equals("internetExplorer"))
+						caps = DesiredCapabilities.internetExplorer();
+					if(properties.getProperty("browsernuvem").equals("iphone"))
+						caps = DesiredCapabilities.iphone();
+					if(properties.getProperty("browsernuvem").equals("opera"))
+						caps = DesiredCapabilities.opera();
+					if(properties.getProperty("browsernuvem").equals("safari"))
+						caps = DesiredCapabilities.safari();
+					caps.setCapability("version", properties.getProperty("browserversionnuvem"));
+					caps.setCapability("platform", properties.getProperty("platformnuvem"));
+					
+					
 					driver = new RemoteWebDriver(new URL(properties.getProperty("urlnuvem")), caps);
 				} catch (MalformedURLException e) {}
 			}else{

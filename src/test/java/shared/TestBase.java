@@ -59,29 +59,4 @@ public abstract class TestBase {
 			FabricaWebDriver.killDriver();
 		}
 	}
-
-    @Rule
-    public TestWatcher watcher = new TestWatcher() {
-	    @Override
-	    protected void failed(Throwable e, Description description) {
-            status= "falha";
-	    }
-	    @Override
-	    protected void skipped(AssumptionViolatedException e, Description description) {
-	    	status= "skiped";
-	    }
-	    @Override
-	    protected void succeeded(Description description) {
-	    	status= "sucesso";
-	    }
-	    
-	    @Override
-	    protected void finished(Description d) {
-	        try {
-	            PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("target/teststream.txt", true)));
-	            out.println("{\"metodo\":\""+testeAtual+"\", \"status\":\""+status+"\", \"classe\":\""+classeAtual+"\", \"descricao\":\""+testeAtual+"\"}");
-	            out.close();
-	        } catch (IOException e) {}
-	    }    	
-    };	
-}
+ }
